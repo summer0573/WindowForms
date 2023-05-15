@@ -28,13 +28,54 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.fontDialog1 = new System.Windows.Forms.FontDialog();
+            this.fontDialog2 = new System.Windows.Forms.FontDialog();
+            this.fontDialog3 = new System.Windows.Forms.FontDialog();
+            this.fontDialog4 = new System.Windows.Forms.FontDialog();
+            this.label1 = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // fontDialog2
+            // 
+            this.fontDialog2.Tag = "asf";
+            // 
+            // fontDialog4
+            // 
+            this.fontDialog4.Tag = "";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("휴먼옛체", 50.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label1.Location = new System.Drawing.Point(49, 33);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(553, 71);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "북녘의 높은 하늘";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(511, 136);
+            this.Controls.Add(this.label1);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.ColorDialog colorDialog1;
+        private System.Windows.Forms.FontDialog fontDialog1;
+        private System.Windows.Forms.FontDialog fontDialog2;
+        private System.Windows.Forms.FontDialog fontDialog3;
+        private System.Windows.Forms.FontDialog fontDialog4;
+        private System.Windows.Forms.Label label1;
     }
 }
 
